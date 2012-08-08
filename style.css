@@ -1,0 +1,14 @@
+.dHeader
+{
+	background-image: url(images/binary.png);
+	background-repeat: repeat-x;
+	height: 600px;
+	width: 900px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+.dHeaderImage
+{
+	height: 600px;
+}
