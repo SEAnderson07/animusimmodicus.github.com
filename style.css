@@ -1,14 +1,40 @@
-.dHeader
+body
 {
-	background-image: url(images/binary.png);
-	background-repeat: repeat-x;
-	height: 600px;
-	width: 900px;
-	margin: auto;
-	border: 1px solid black;
+
 }
 
-.dHeaderImage
+.dHeader
 {
-	height: 600px;
+	height: 300px;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	overflow: hidden;
+	position: relative;
+}
+
+#iHeaderImage
+{
+	height: 280px;
+	width: 280px;
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	right: 50%;
+	margin-top: -140px;
+	margin-right: -140px;
+	/*top: 50%;
+	left: 50%;
+	margin-left: -300px;
+	margin-top: -300px;*/
+}
+
+#dHeaderText
+{
+	font-size: 1em;
+	line-height: 90%;
+	margin-left: -2px;
+	
+
 }
