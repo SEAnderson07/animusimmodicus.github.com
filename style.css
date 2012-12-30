@@ -1,40 +1,163 @@
+
 body
 {
-
+	font-family: Courier;
+	font-size: 1em;
+	background-color: #AAAAAA;
 }
 
-.dHeader
+
+body{
+  /* fallback */
+  background-color: #2F2727;
+  
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+  
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+  
+  /* Firefox 3.6+ */ 
+  background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
+  
+  /* IE 10 */ 
+  background: -ms-radial-gradient(circle, #1a82f7, #2F2727);
+  
+  /* Opera cannot do radial gradients yet */
+  
+  font-weight: bold;
+}
+
+#dMainContainer
 {
-	height: 300px;
+	position: relative;
 	width: 900px;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0;
+	padding: 0;
+	border: 0;
+}
+
+#dContent
+{
+	border: 1px solid black;
+	width: 99%;
+	min-height: 500px;
+	margin-top: 0.4em;
+	background-color: #FFFFFF;
+	padding-left: 5px;
+	padding-right: 5px;
+	
+	box-shadow: 4px 4px 4px #000;
+	
+	/*-webkit-transform:skewX(170deg);*/
+}
+
+#dHeader
+{
+	position: relative;
+	height: 200px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid black;
 	overflow: hidden;
 	position: relative;
+	background-color: #FFFFFF;
+	
+	box-shadow: 2px 2px 2px #000;
+	-webkit-transform:skewX(10deg);
+	margin-left: -10px;
 }
 
 #iHeaderImage
 {
-	height: 280px;
-	width: 280px;
+	height: 180px;
+	width: 180px;
 	position: absolute;
 	z-index: 10;
 	top: 50%;
-	right: 50%;
-	margin-top: -140px;
-	margin-right: -140px;
+	left: 20px;
+	margin-top: -90px;
 	/*top: 50%;
 	left: 50%;
 	margin-left: -300px;
 	margin-top: -300px;*/
 }
 
+#iHeaderTitle
+{
+	position: absolute;
+	height: 120px; /* ~620px width */
+	top: 50%;
+	right: 1em;
+	margin-top: -60px;
+	z-index: 5;
+}
+
 #dHeaderText
 {
-	font-size: 1em;
+	position: relative;
+	font-family: courier;
+	font-size: 1.0em;
 	line-height: 90%;
-	margin-left: -2px;
-	
+	margin-top: -4px;
+	margin-left: -5px;
+	white-space: normal;
+	font-weight: bold;
+}
 
+#dNavigation
+{
+	width: 900px;
+	border-top: 0px;
+	position: relative;
+}
+
+#dSubNavigation
+{
+	position: absolute;
+	margin-top: -10px;
+	right: 0px;
+}
+
+.aNavigation
+{
+	font-family: Courier;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	width: 150px;
+	float: left;
+	z-index: 20;
+	
+	border: 2px solid black;
+	background-color: #FFFFFF;
+	margin-top: -0.2em;
+	margin-right: 0.5em;
+	
+	color: #000000;
+
+	/*transform:skewX(160deg);
+	-webkit-transform:skewX(160deg);*/
+}
+
+.aNavigation:hover
+{
+	text-decoration: underline;
+	color: rgb(0,102,153);
+}
+
+#dFooter
+{
+	margin-top: 0.5em;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
 }
