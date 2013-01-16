@@ -1,7 +1,7 @@
 
 body
 {
-	font-family: Courier;
+	font-family: "Arial";
 	font-size: 1em;
 	background-color: #AAAAAA;
 }
@@ -69,8 +69,8 @@ body{
 	background-color: #FFFFFF;
 	
 	box-shadow: 2px 2px 2px #000;
-	-webkit-transform:skewX(10deg);
-	margin-left: -10px;
+	/*-webkit-transform:skewX(10deg);
+	margin-left: -10px;*/
 }
 
 #iHeaderImage
@@ -126,7 +126,7 @@ body{
 
 .aNavigation
 {
-	font-family: Courier;
+	font-family: "Arial";
 	font-weight: bold;
 	text-align: center;
 	font-size: 1.5em;
